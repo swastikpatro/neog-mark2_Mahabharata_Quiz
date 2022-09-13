@@ -109,6 +109,11 @@ function welcome() {
   var userName = readlineSync.question('What is your name? ') || 'noName';
   console.log(pinkColor(`Welcome ${userName} to MAHABHARATA Quiz`));
   console.log(pinkColor("Let's see if you are a true MAHABHARATA Fan Ⓜ"));
+  console.log(
+    orangeColor(
+      'You can choose the option (a, b, c or d) or write the text of any option for example (suta).'
+    )
+  );
   enter();
   const userNameAndScore = startQuiz(userName);
   enter();
